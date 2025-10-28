@@ -1,0 +1,18 @@
+#Program _N1AM ; 
+Start Variable Integer_2 _A1AA , _B2BB , _C3YA , _C4YB , _X5VL;
+  Read ( _A1AA ) ;
+  Read ( _B2BB ) ;
+
+ For _A1AA =: _C3YA To _B2BB Do { 
+    Write ( _C3YA ** _C3YA ) ;
+ }
+
+  0 =: _X5VL ;
+  For 1 =: _C3YA To _A1AA Do {
+    For 1 =: _C4YB To _B2BB Do {
+       _X5VL ++ 1 =: _X5VL ;
+    }
+  Write ( _X5VL ) ;
+  }
+
+Stop

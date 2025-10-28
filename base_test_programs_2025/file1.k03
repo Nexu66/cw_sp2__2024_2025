@@ -1,0 +1,18 @@
+#Program _N1AM ; 
+Start Variable Integer_2 _A1AA , _B2BB , _X3XX , _Y4YY ;
+  Read ( _A1AA ) ; 
+  Read ( _B2BB ) ;
+  
+  Write ( _A1AA ++ _B2BB ) ;
+  Write ( _A1AA -- _B2BB ) ;
+  Write ( _A1AA ** _B2BB ) ;
+  Write ( _A1AA Div _B2BB ) ;
+  Write ( _A1AA Mod _B2BB ) ;
+
+  ( _A1AA -- _B2BB ) ** 10 ++ ( _A1AA ++ _B2BB ) Div 10 =: _X3XX 
+  _X3XX ++ _X3XX Mod 10 =: _Y4YY ;
+
+  Write ( _X3XX ) ;
+  Write ( _Y4YY ) ;
+
+Stop

@@ -1,0 +1,34 @@
+#Program _N1AM ; 
+Start Variable Integer_2 _A1AA , _B2BB , _C3CC , _M4AX ;
+  Read ( _A1AA ) ;
+  Read ( _B2BB ) ;
+  Read ( _C3CC ) ;
+
+  If _A1AA > _B2BB & _A1AA > _C3CC {
+    _A1AA =: _M4AX ; 
+  } Else If _B2BB > _A1AA & _B2BB > _C3CC {
+    _B2BB =: _M4AX ;
+  } Else {
+    _C3CC =: _M4AX ;
+  }
+  Write ( _M4AX ) ;
+
+  If ( _A1AA == _B2BB ) & ( _A1AA == _C3CC ) & ( _B2BB == _C3CC ) {
+    Write ( 1 ) ;
+  } Else {
+    Write ( 0 ) ;
+  }
+    
+  If ( _A1AA < 0 ) | ( _B2BB < 0 ) | ( _C3CC < 0 ) {
+    Write ( -1 ) ;
+  } Else {
+    Write ( 0 ) ;
+  }
+
+  If ! ( _A1AA < ( _B2BB ++ _C3CC ) ) {
+    Write ( 10 ) ;
+  } Else {
+    Write ( 0 ) ;
+  }
+ 
+Stop
